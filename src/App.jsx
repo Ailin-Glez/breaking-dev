@@ -1,37 +1,33 @@
 import './App.css';
 
-import {
-  useEffect,
-  useState,
-} from 'react';
+import { useState } from 'react';
 
-import {
-  collection,
-  getDocs,
-} from 'firebase/firestore';
+import { collection } from 'firebase/firestore';
 
+import Quotes from './components/Quotes';
 import { db } from './config/firebase';
 
 function App() {
   const [characters, setCharacter] = useState();
   const charactersCollectionRef = collection(db, "characters");
 
-  useEffect(() => {
-    // get collection data
-    const getCharacters = async () => {
-      const data = await getDocs(charactersCollectionRef);
-      setCharacter(data.docs.map((doc) => ({ ...doc.data() })));
-      console.log(data.docs.map((doc) => ({ ...doc.data() })));
-      // console.log(data.docs);
-    };
+  // useEffect(() => {
+  //   // get collection data
+  //   const getCharacters = async () => {
+  //     const data = await getDocs(charactersCollectionRef);
+  //     setCharacter(data.docs.map((doc) => ({ ...doc.data() })));
+  //     console.log(data.docs.map((doc) => ({ ...doc.data() })));
+  //     // console.log(data.docs);
+  //   };
 
-    getCharacters();
-  }, []);
+  //   getCharacters();
+  // }, []);
 
   console.log(characters);
   return (
     <div className="Apps">
-      {characters &&
+      <Quotes />
+      {/* {characters &&
         characters.map((char, index) => {
           const { name, img, nickname, occupation, portrayed } = char;
           return (
@@ -44,7 +40,7 @@ function App() {
               <img src={img} alt={`${name} image`} />
             </section>
           );
-        })}
+        })} */}
     </div>
   );
 }

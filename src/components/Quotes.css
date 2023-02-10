@@ -1,0 +1,53 @@
+.quotes-container {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 1.2rem 2rem 0.2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  min-height: 12rem;
+  border-radius: 0.8rem;
+}
+
+.quote {
+  min-height: 4rem;
+  font-size: 1.2rem;
+}
+
+.author-image {
+  width: 6rem;
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-container {
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.author {
+  /* text-align: right; */
+  font-style: italic;
+}
+
+.copy {
+  margin: 0.5rem;
+}
+
+.refreshBtn {
+  margin-right: auto;
+}
+
+.refreshBtn:hover {
+  cursor: pointer;
+}
+
+.tweetBtn {
+  color: var(--white);
+  border: 2px solid white;
+  background-color: rgb(29, 155, 240);
+}
