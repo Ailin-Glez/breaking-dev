@@ -1,37 +1,56 @@
 .quotes-container {
-  background-color: var(--blue);
+  margin-top: 20px;
+  background-color: #6b9080;
   color: var(--white);
   padding: 1.2rem 2rem 0.2rem 2rem;
   display: flex;
   flex-direction: column;
-  width: 40rem;
-  min-height: 12rem;
+  justify-content: space-evenly;
+  width: 35rem;
   border-radius: 0.8rem;
+  min-height: 20rem;
+}
+
+button,
+.refreshBtn:hover {
+  cursor: pointer;
+}
+
+.quotation-mark {
+  margin-top: -8rem;
+  font-weight: bold;
+  font-size: 6rem;
+  position: fixed;
+  font-family: "Times New Roman", Times, Serif;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .quote {
-  min-height: 4rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  color: white;
+  border: none;
+  background-color: rgb(91, 91, 91);
+}
+
+.author {
+  border-top: 1px solid white;
+  text-align: center;
+  padding-top: 0.5rem;
 }
 
 .author-image {
   width: 6rem;
 }
 
-.img-container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .buttons-container {
-  margin-top: 1.2rem;
   display: flex;
   align-items: center;
-}
-
-.author {
-  /* text-align: right; */
-  font-style: italic;
 }
 
 .copy {
@@ -40,10 +59,6 @@
 
 .refreshBtn {
   margin-right: auto;
-}
-
-.refreshBtn:hover {
-  cursor: pointer;
 }
 
 .tweetBtn {

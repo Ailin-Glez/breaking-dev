@@ -5,7 +5,7 @@
   --green: #78a53c;
   --yellow: #f8ca0f;
 
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Dosis, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -19,17 +19,18 @@
   -webkit-text-size-adjust: 100%;
 }
 
+@font-face {
+  font-family: Dosis;
+  src: url("./assets/fonts/Dosis-VariableFont_wght.ttf");
+}
+
 body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  background-color: black;
+  /* min-width: 320px;
+  min-height: 100vh; */
 }
 
 button {
