@@ -1,0 +1,68 @@
+.quotes-container {
+  margin-top: 20px;
+  background-color: #6b9080;
+  color: var(--white);
+  padding: 1.2rem 2rem 0.2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 35rem;
+  border-radius: 0.8rem;
+  min-height: 20rem;
+}
+
+button,
+.refreshBtn:hover {
+  cursor: pointer;
+}
+
+.quotation-mark {
+  margin-top: -8rem;
+  font-weight: bold;
+  font-size: 6rem;
+  position: fixed;
+  font-family: "Times New Roman", Times, Serif;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.quote {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  color: white;
+  border: none;
+  background-color: rgb(91, 91, 91);
+}
+
+.author {
+  border-top: 1px solid white;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.author-image {
+  width: 6rem;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+}
+
+.copy {
+  margin: 0.5rem;
+}
+
+.refreshBtn {
+  margin-right: auto;
+}
+
+.tweetBtn {
+  color: var(--white);
+  border: 2px solid white;
+  background-color: rgb(29, 155, 240);
+}
