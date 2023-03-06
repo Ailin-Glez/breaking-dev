@@ -1,68 +1,109 @@
-.quotes-container {
-  margin-top: 20px;
-  background-color: #6b9080;
-  color: var(--white);
-  padding: 1.2rem 2rem 0.2rem 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 35rem;
-  border-radius: 0.8rem;
-  min-height: 20rem;
+:root {
+  --light-gray: #d1dadf;
+  --gray: #323b47;
+  --dark-gray: #202732;
+  --green: #004a00;
+  --light-green: #4bffb4;
+  font-family: Manrope;
+
+  color: var(--light-gray);
+  background-color: var(--dark-gray);
 }
 
-button,
-.refreshBtn:hover {
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.card {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  max-height: 15rem;
+  align-items: center;
+  width: 30rem;
+  border-radius: 20px;
+  background-color: var(--gray);
+  box-shadow: 0 2em 2em rgba(0, 0, 0, 0.1);
+}
+
+.walter-logo {
+  width: 3rem;
+}
+
+.btn-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 27rem;
+}
+
+.buttons svg {
+  margin-right: 1rem;
   cursor: pointer;
 }
 
-.quotation-mark {
-  margin-top: -8rem;
-  font-weight: bold;
-  font-size: 6rem;
-  position: fixed;
-  font-family: "Times New Roman", Times, Serif;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.quote {
-  font-size: 1.4rem;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-button:disabled {
-  cursor: not-allowed;
+.buttons button {
+  background-color: transparent;
   color: white;
   border: none;
-  background-color: rgb(91, 91, 91);
+  padding: 0;
 }
 
 .author {
-  border-top: 1px solid white;
-  text-align: center;
-  padding-top: 0.5rem;
+  text-align: right;
+  margin-top: 0.5rem;
 }
 
-.author-image {
-  width: 6rem;
+.divider {
+  margin-top: 2rem;
 }
 
-.buttons-container {
+.quote {
+  padding: 0 1.5rem;
+  min-height: 8rem;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
+  text-align: left;
+  margin: 0.1rem;
 }
 
-.copy {
-  margin: 0.5rem;
+.quote-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: #2a9d8f;
+  border-radius: 50%;
+  border: none;
+  padding: 2rem;
+  cursor: pointer;
 }
 
-.refreshBtn {
-  margin-right: auto;
+.quote-btn:hover {
+  box-shadow: 2px 2px 30px #00b4d8;
 }
 
-.tweetBtn {
-  color: var(--white);
-  border: 2px solid white;
-  background-color: rgb(29, 155, 240);
+@media (max-width: 550px) {
+  .card {
+    width: 20rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+  }
+
+  .btn-footer {
+    width: 18rem;
+  }
+
+  .divider {
+    content: url("/pattern-divider-mobile.svg");
+  }
 }
