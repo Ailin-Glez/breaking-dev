@@ -26,7 +26,7 @@ function Quotes() {
 
   return (
     <div className="card">
-      <p className="quote">{quotes?.quote}</p>
+      <p className="quote">"{quotes?.quote}"</p>
       <img className="divider" src="./pattern-divider-desktop.svg" alt="divider" />
       <div className="btn-footer">
         <div className="buttons">
